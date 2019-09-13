@@ -1,0 +1,135 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body{
+	background-color: lightblue;
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url('bg_image.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	height: 100%;
+}
+
+/*edw*/
+.header {
+	max-width: 100%;
+	background-color: transparent;
+	max-height: 50px;
+	border-bottom: 1px solid white;
+}
+
+.header h2 {
+	color: white;
+	text-align: left;
+	vertical-align: center;
+	padding: 15px;
+	margin-left: 45px;
+}
+
+.header a {
+	float: right;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+.header a:hover {
+	text-decoration: underline;
+}
+
+.header span {
+	border-radius: 7px;
+	padding: 0px 3px;
+	background-color: #6868ef;
+	margin: 2px;
+}
+
+/*edw*/
+
+.container {
+	width: 70%;
+	height: 70%;
+	margin: 20vh auto;
+	text-align: center;
+}
+
+.box{
+	width: 45%;
+	height: 100%;
+	border: 0px solid #fff;
+	border-radius: 8px;
+	overflow: auto;
+	-webkit-overflow-scrolling: auto;
+	-webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.box h1 {
+	text-align: center;
+	color: #fff;
+	margin: 2vh;
+}
+
+.box p {
+	text-align:left;
+	font-weight: bold;
+	color: #fff;
+	margin: 3vh;
+}
+
+.box input {
+	width: 90%;
+	margin-bottom: 3vh;
+}
+
+.box input[type="text"], input[type="password"], input[type="email"] {
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	color: #fff;
+	height: 40px;
+}
+
+::placeholder { 
+    font-style: italic;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-style: italic;
+}
+
+.box input[type="submit"] {
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #A9A9A9;
+	color: #fff;
+	border-radius: 20px;
+}
+
+.box input[type="submit"]:hover {
+	cursor: pointer;
+	background: #696969;
+	color: #000;
+}
+.warning {
+ color: #FA8072;
+ font-weight: bold;
+ text-transform: uppercase;
+ text-align: center;
+ font-style: italic;
+ font-size: 85%;
+}

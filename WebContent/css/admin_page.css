@@ -1,0 +1,89 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	/*background-color: #f5f5cc;*/
+	background-color: #B7E2F0;
+}
+
+.container {
+	max-width: 85%;
+	min-width: 85%;
+	margin: auto;
+	border: 0.5px solid lightgrey;
+	border-radius: 6px;
+	background-color: white;
+	padding: 20px 15px;
+	margin-top: 70px;
+	box-sizing: border-box;
+}
+
+.results {
+	width: 100%;
+	border: 1px solid #bbb;
+	border-radius: 6px;
+	overflow: auto;
+	padding: 20px 15px;
+	-webkit-overflow-scrolling: auto;
+	-webkit-box-shadow: 5px 5px 2px #ccc;
+	-moz-box-shadow: 5px 5px 2px #ccc;
+	box-shadow: 5px 5px 2px #ccc;
+	box-sizing: border-box;
+}
+
+#logout_lnk{
+	color: #333;
+	position: fixed;
+	top: 10px;
+	right: 15px;
+	font_size: 110%;
+	text-decoration: none;
+	border-bottom: 1px solid #333;
+	padding: 3px;
+}
+
+.icon {
+	margin-right: 6px;
+}
+
+#user_list{
+	color: #222;
+}
+
+li{
+	font-size: 110%;
+	border-bottom: 1px solid #222;
+	width: 100%;
+	list-style-position: inside;
+	margin-bottom: 6px;
+	padding-bottom: 6px;
+}
+
+.dl_cont, .prof_link {
+	font-size: 90%;
+	float:right;
+	border-right: 1px solid #222;
+	padding-right: 1%;
+	color: #222;
+}
+
+.dl_link{
+	color: #222;
+}
+
+.dl_link:hover {
+	color: #008B8B;
+}
+
+.prof_link{
+	margin-left: 1%;
+	border: none;
+	padding: none;
+}
+
+.prof_link:hover {
+	color: #008B8B;
+}

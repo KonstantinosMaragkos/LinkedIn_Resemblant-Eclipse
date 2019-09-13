@@ -1,0 +1,111 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+/*edw*/
+.header {
+	max-width: 100%;
+	background-color: #444;
+	max-height: 50px;
+	border-bottom: 1px solid white;
+}
+
+.header h2 {
+	color: white;
+	text-align: left;
+	vertical-align: center;
+	padding: 15px;
+	margin-left: 45px;
+}
+
+.header span {
+	border-radius: 7px;
+	padding: 0px 3px;
+	background-color: #6868ef;
+	margin: 2px;
+}
+
+.progress {
+	position: relative;
+	max-width: 50%;
+	height: 30px;
+	margin: auto;
+	background-color: white;
+	border: 1px solid grey;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+.demo {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 50%;
+	background-color: lightblue;
+	padding: 5px;
+	vertical-align: middle;
+	border-right: 1px solid lightgrey;
+	transition: 0.3s;
+	text-align: center;
+}
+
+.active {
+	background-color: #008B8B;
+	color: white;
+}
+
+.container {
+	max-width: 50%;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+	border: 1px solid grey;
+	border-radius: 5px;
+	box-sizing: border-box;
+	box-shadow: 5px 5px 2px #ccc;
+	position: relative;
+	
+	color: #333;
+}
+
+.container h2 {
+	text-align: center;
+}
+
+#next_button, .container input[type="submit"] {
+	position: absolute;
+	right: 50%;
+	bottom: 5px;
+	padding: 10px;
+	background-color: lightblue;
+	border-radius: 6px;
+	font-size: 100%;
+	cursor: pointer;
+}
+
+#next_button:hover,  .container input[type="submit"]:hover{
+	background-color: #008B8B;
+	color: white;
+}
+
+
+/*i div5*/
+.container input[type="text"] {
+	width: 90%;
+	margin-bottom: 3vh;
+	height: 30px;
+	padding: 5px;
+}
+
+.container select {
+	width: 15%;
+	height: 5%;
+	margin-bottom: 3vh;
+}

@@ -1,0 +1,394 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	/*background-color: #f5f5cc;*/
+	background-color: #B7E2F0;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #444;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li .active:hover {background-color: #111; color: white;}
+
+ul.topnav li a.active {
+	background-color: lightgrey;
+	color: grey;
+}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+
+.topnav li:first-child {
+	/*border-right: 1px solid #666;*/
+	padding-right: 16px;
+	padding-left: 6px;
+	padding-top: 4px;
+}
+
+#demo{
+	color: white;
+	background-color: #6868ef;
+	padding: 6px;
+	border-radius: 7px;	
+	margin: 2px 0px;;
+}
+
+.icon {
+	margin-right: 5px;
+}
+
+/*-------end of topnav-----*/
+
+.column {
+	float: left;
+    padding: 10px;
+}
+
+.side {
+	max-width: 30%;
+	border: 0.5px solid lightgrey;
+	border-radius: 6px;
+	background-color: white;
+	margin: 10px;
+	margin-left: 15px;
+	padding: 20px 15px;
+	overflow: auto;
+}
+
+.content {
+	width: 60%;
+	max-width: 60%;
+	border: 0.5px solid lightgrey;
+	border-radius: 6px;
+	background-color: white;
+	margin: 10px 75px;
+	padding: 30px 40px;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 1000px){
+	.content{
+		margin: 10px;
+	}
+}
+
+.pr_img {
+	margin-bottom: 18px;
+	/*border: 5px ridge lightgrey;*/
+	border-radius: 6px;
+	box-shadow: 5px 5px 2px #ccc;
+	object-fit: cover;
+	box-sizing:border-box;
+	max-width:200px;width:100%;height:auto;
+	max-height: 220px;
+}
+
+.container {
+	margin: 20px 3px 10px;
+	border-bottom: 1px solid grey;
+	padding-bottom: 10px;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#div1 {
+	background-color: #eeee;
+	border-radius: 6px;
+	padding: 5px;
+}
+
+.data_left {
+	padding: 5px;
+	font-size: 108%;
+	border-bottom: 1px solid lightgrey;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+}
+
+.last {
+	border: none;
+}
+
+.name {
+	font-size: 150%;
+	color: #333;
+	margin-bottom: 25px;
+	padding: 2px;
+}
+
+.data_left b{
+	color:#008B8B;
+	max-width: 100%;
+}
+
+.data_left span, .data_left i{
+	color: #444;
+}
+/*------end of left-------*/
+
+.content h2 {
+	text-align: center;
+	color: #888;
+	padding-bottom: 10px;
+}
+
+.content h1 {
+	color: #555;
+	margin-right: 25px;
+	margin-bottom: 25px;
+}
+
+.data_right {
+	padding: 5px;
+	font-size: 108%;
+}
+
+.year {
+	margin-right:25px;
+	font-size: 105%;
+}
+
+.data_right b{
+	color: #008B8B;
+	font-size: 115%;
+}
+
+.data_right p {
+	color: #444;
+	margin-top: 8px;
+}
+
+.edit_icon {
+	font-size: 60%;
+	float: right;
+	color: grey;
+	cursor: pointer;
+	text-align: center;
+	position:relative;
+	bottom: -5px;
+}
+
+.edit_icon:hover {
+	color: black;
+}
+
+.popuptext {
+    visibility: hidden;
+    width: 80px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 135%;
+    left: 50%;
+    margin-left: -50px;
+    font-size: 70%;
+    
+}
+
+.para {
+	 font-size: 78%;
+}
+
+.popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.switch {
+  position: relative;
+  bottom: 5px;
+  right: 5px;
+  display: inline;
+  width: 50px;
+  height: 25px;
+  float: right;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 12px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  left: 5px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 10px;
+}
+
+input:checked + .slider {
+  background-color: #008B8B;;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(21px);
+}
+
+/*--------end of right--------*/
+
+/*modal*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/*modal content*/
+.modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 60%;
+    position: relative;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    top: -10px;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*------in modal / about form------*/
+
+.modal-content input[type="text"] {
+	width: 60%;
+	margin-bottom: 1vh;
+	height: 15px;
+	padding: 3px;
+}
+
+#info {
+	display:block;
+	padding-bottom: 12px;
+	color:#008B8B;
+	font-size:90%
+}
+
+.modal-content select {
+	width: 10%;
+	height: 5%;
+	margin-bottom: 1vh;
+}
+
+.modal-content p {
+	color: #008B8B;
+	font-weight: bold;
+}
+
+.modal-content input[type="submit"] {
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+	padding: 5px;
+	font-size: 80%;
+	cursor: pointer;
+}
+
+input[type="checkbox"] {
+	margin-left: 10px;
+}
+
+@media screen and (max-height: 600px){
+	.modal-content input[type="text"] {
+		height: 14px;
+		width: 45%;
+		padding: 2px;
+	}
+	
+	.modal-content input[type="submit"] {
+		margin-top: 8px;
+		padding: 4px;
+		font-size: 70%;
+	}
+	.modal {
+		padding-top: 5px;
+		overflow: auto;
+	}
+	.modal-content {
+		overflow: auto;
+	}
+}
+
+.fa-arrow-left, .fa-arrow-right {
+	font-size: 70%;
+	margin: 1px;
+}

@@ -1,0 +1,154 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	/*background-color: #f5f5cc;*/
+	background-color: #B7E2F0;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #444;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li .active:hover {background-color: #111; color: white;}
+
+ul.topnav li a.active {
+	background-color: lightgrey;
+	color: grey;
+}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+
+.topnav li:first-child {
+	/*border-right: 1px solid #666;*/
+	padding-right: 16px;
+	padding-left: 6px;
+	padding-top: 4px;
+}
+
+#demo{
+	color: white;
+	background-color: #6868ef;
+	padding: 6px;
+	border-radius: 7px;	
+	margin: 2px 0px;;
+}
+
+.icon {
+	margin-right: 5px;
+}
+
+/*------------*/
+
+.container {
+	max-width: 50%;
+	margin: auto;
+	border: 0.5px solid lightgrey;
+	border-radius: 6px;
+	background-color: white;
+	padding: 20px 15px;
+	margin-top: 50px;
+}
+
+.myForm {
+	border: 1px solid #bbb;
+	border-radius: 6px;
+	overflow: auto;
+	padding: 20px;
+	-webkit-overflow-scrolling: auto;
+	-webkit-box-shadow: 5px 5px 2px #ccc;
+	-moz-box-shadow: 5px 5px 2px #ccc;
+	box-shadow: 5px 5px 2px #ccc;
+	box-sizing: border-box;
+}
+
+.head #pr_icon {
+	float: left;
+	font-size: 120%;
+	color: lightblue;
+	margin-right: 5px;
+}
+
+.head{
+	width: 70%;
+	margin: auto;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+
+.head p{
+	font-size: 120%;
+	color: #555;
+}
+
+input[type="submit"] {
+	width:25%;
+	margin: auto;
+	padding: 10px;
+	background-color: lightblue;
+	border-radius: 6px;
+	font-size: 100%;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #008B8B;
+	color: white;
+}
+
+input[type="text"],  input[type="password"]{
+	width: 90%;
+	margin-bottom: 3vh;
+	height: 20px;
+	padding: 5px;
+}
+
+.input[type="checkbox"]{
+	display: block;
+}
+
+.error {
+	border: 1px solid red;
+}
+
+.warning {
+	color:red;
+	font-style:italic;
+	font-size:85%;
+	text-align:left;
+	margin:3vh;
+	float:right;
+}
+
+.ok_message {
+	color:green;
+	font-style:italic;
+	font-size:85%;
+	text-align:left;
+	margin:3vh;
+	float:right;
+}
